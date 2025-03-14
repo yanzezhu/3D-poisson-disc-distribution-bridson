@@ -14,6 +14,11 @@ cd build
 cmake ..
 make -j8
 ```
+To execute:
+```bash
+cd bin
+./main
+```
 
 Executable outputs to `./bin`.
 
