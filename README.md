@@ -20,8 +20,6 @@ cd bin
 ./main
 ```
 
-Executable outputs to `./bin`.
-
 `yaml-cpp` and `PCL` are only used for examples, not required for core implementation.
 
 ## Features
