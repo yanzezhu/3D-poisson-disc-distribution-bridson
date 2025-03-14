@@ -1,6 +1,6 @@
 # 3D Poisson Disk Sampling Implementation
 
-## Project Overview
+## Overview
 This 3D Poisson disk sampling implementation extends the 2D work by [Martyn Afford](https://github.com/martynafford/poisson-disc-distribution-bridson), which is based on Robert Bridson's paper [_Fast Poisson Disk Sampling in Arbitrary Dimensions_](https://dl.acm.org/doi/10.1145/1278780.1278807).
 
 The key modifications are made in the `point_around` function.
