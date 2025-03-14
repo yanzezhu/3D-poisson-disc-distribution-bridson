@@ -1,0 +1,5 @@
+width: 80
+height: 100
+length: 200
+min_distance: 10.0
+max_attempts: 30

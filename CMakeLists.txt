@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.20)
+project(debug)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
+add_executable(main main.cpp)
+
+find_package(PCL REQUIRED)
+find_package(yaml-cpp REQUIRED)
+target_include_directories(main PRIVATE ${PCL_INCLUDE_DIRS})
+target_link_libraries(main PRIVATE ${PCL_LIBRARIES})
+target_link_libraries(main PRIVATE yaml-cpp::yaml-cpp)
+target_compile_definitions(main PRIVATE ${PCL_DEFINITIONS})
