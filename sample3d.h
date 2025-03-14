@@ -1,5 +1,6 @@
 // Copyright (c) 2019 Martyn Afford
 // Licensed under the MIT licence
+// Modified by Yanze on March 14, 2025
 
 #ifndef BRIDSON_POISSON_DISC_DISTRIBUTION_HPP
 #define BRIDSON_POISSON_DISC_DISTRIBUTION_HPP
@@ -40,7 +41,7 @@ namespace bridson
         int Z = std::ceil(conf.zz / cell_size);
 
         std::vector<Point> grid(X * Y * Z);
-        std::stack<Point> process;
+        std::stack<Point> process; // this corresponds to the "active list" in Bridson's paper.
         std::vector<Point> points;
 
         auto squared_distance = [](const Point &a, const Point &b)
